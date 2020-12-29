@@ -107,10 +107,10 @@ button:hover {
     transform: TranslateY(15%) rotateZ(20deg);
   }
 }
-/* img {
-  height: 100px;
-  width: 100px;
-} */
+img {
+  height: 70px;
+  width: 70px;
+}
 .hero{
   margin-top: 100px;
   margin-left: 50px;
