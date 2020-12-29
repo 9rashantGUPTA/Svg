@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+   background-color:#EAEAEA;
+}
+.container{
+    text-align: auto;
+    margin-top: 10%;
+}
+#rightw, #leftw{
+    animation: wheel 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#man{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+#cap{
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes bike{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes hat{
+    from{
+        transform: TranslateY(0%) rotateZ(0deg);
+    }
+    to{
+        transform: TranslateY(40%) rotateZ(20deg);
+    }
+}
